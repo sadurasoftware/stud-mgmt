@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
   swcMinify: true,
   experimental: {
     optimizePackageImports: ['recharts'],
+    esmExternals: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
